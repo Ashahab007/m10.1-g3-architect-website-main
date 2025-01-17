@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-/* shared styles */
+/* ? shared styles */
 .display-flex {
   display: flex;
 }
@@ -15,7 +15,7 @@
   color: #ff900e;
 }
 
-/* button */
+/* ? button */
 .button-primary {
   background-color: #ff900e;
   color: white;
@@ -31,12 +31,12 @@
   font-weight: 700;
 }
 
-/* dark 02 */
+/* ? dark 02 */
 .text-grey {
   color: #424242;
 }
 
-/* dark 03 */
+/* ? dark 03 */
 .text-light-grey {
   color: #727272;
 }
@@ -48,9 +48,9 @@
 main > section {
   margin-top: 130px;
 }
-/* header styles */
+/* ? header styles */
 
-/* navbar related styles */
+/* ? navbar related styles */
 .navbar {
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,7 @@ main {
   font-size: 2rem;
 }
 
-/* banner related styles */
+/* ? banner related styles */
 .banner-content {
   max-width: 880px;
   margin: 0 auto;
@@ -96,7 +96,7 @@ main {
   width: 100%;
 }
 
-/* team and feature related styles */
+/* ? team and feature related styles */
 .teams {
   align-items: center;
 }
@@ -116,7 +116,7 @@ main {
   font-weight: 500;
 }
 
-/* some facts related styles */
+/*? some facts related styles */
 .facts-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -148,7 +148,7 @@ main {
   max-width: 540px;
 }
 
-/* sponsor related styles */
+/* ? sponsor related styles */
 .sponsor-info {
   max-width: 540px;
   margin: 50px auto;
@@ -164,9 +164,64 @@ main {
   filter: grayscale(100%);
 }
 
-/* feature you love related styles */
+/*? feature you love related styles */
+/* !Only This section is created by me without help of jhankar mahbub. for designing this section perfectly see module 10.9 */
 .feature-section {
-  display: flex;
+  max-width: 1440px;
+  gap: 6rem;
+  /* flex: 1; */
+}
+
+.feature-enjoy-container {
+  /* border: 1px solid; */
+}
+
+.feature-enjoy-description .section-title {
+  border-left: 10px solid #ff900e;
+  padding-left: 20px;
+}
+
+.feature-enjoy-card {
+  padding: 30px;
+  box-shadow: 2px 2px 10px hsla(0, 0%, 0%, 0.101);
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.feature-enjoy-card-name {
+  font-weight: 600;
+}
+
+.feature-enjoy-image-container {
+  position: relative;
+  /* border: 1px solid; */
+}
+
+.experience {
+  max-width: 300px;
+  height: 120px;
+  padding: 10px 20px;
+  background-color: #ff900e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  left: -4rem;
+  bottom: 8%;
+  /* border: 1px solid; */
+}
+
+.experience h1 {
+  font-size: 3rem;
+  margin: 0;
+  /* border: 1px solid; */
+}
+
+.experience > p {
+  /* border: 1px solid; */
+  margin: 0;
 }
 
 /* footer related styles */
@@ -201,29 +256,57 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .feature-section {
+    flex-direction: column;
+  }
+
+  .feature-enjoy-image-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .experience {
+    left: 5rem;
+    bottom: -4rem;
+  }
+
   .our-features {
     margin-left: 20px;
   }
-}
 
-.facts-container {
-  justify-items: center;
-  gap: 24px;
-}
+  .facts-container {
+    justify-items: center;
+    gap: 24px;
+  }
 
-.sponsor-companies {
-  justify-items: center;
-  gap: 50px;
-}
+  .sponsor-companies {
+    justify-items: center;
+    gap: 50px;
+  }
 
-.footer-section > p {
-  text-align: center;
+  .footer-section > p {
+    text-align: center;
+  }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 996px) {
   .teams {
     flex-direction: column;
+  }
+
+  .feature-section {
+    flex-direction: column;
+  }
+
+  .feature-enjoy-image-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .experience {
+    left: 35%;
+    bottom: -4rem;
   }
 
   .our-features {
