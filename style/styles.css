@@ -146,3 +146,14 @@ main {
     margin-left: 20px;
   }
 }
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 996px) {
+  .teams {
+    flex-direction: column;
+  }
+
+  .our-features {
+    margin: 20px auto;
+  }
+}
