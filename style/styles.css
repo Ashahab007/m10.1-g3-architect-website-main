@@ -119,6 +119,37 @@ main {
   font-weight: 500;
 }
 
+/* some facts related styles */
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fact-number {
+  font-size: 2.8rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #727272;
+}
+
+.fact-description {
+  max-width: 540px;
+}
 /* *
 * for responsive design consider 5 things
 * 1. breakpoints
@@ -138,13 +169,19 @@ main {
     padding: 0;
   }
 
-  .team-image-container {
+  .team-image-container,
+  .facts-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .our-features {
     margin-left: 20px;
   }
+}
+
+.facts-container {
+  justify-items: center;
+  gap: 24px;
 }
 
 /* medium size device */
