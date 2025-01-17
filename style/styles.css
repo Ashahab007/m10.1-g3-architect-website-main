@@ -67,7 +67,9 @@ main > section {
 }
 
 .navbar,
-.banner {
+.banner,
+.footer-section,
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -92,11 +94,6 @@ main > section {
 
 .banner-image {
   width: 100%;
-}
-
-main {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 /* team and feature related styles */
@@ -150,6 +147,30 @@ main {
 .fact-description {
   max-width: 540px;
 }
+
+/* sponsor related styles */
+.sponsor-info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor-companies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img {
+  filter: grayscale(100%);
+}
+
+/* footer related styles */
+.footer-section > p {
+  max-width: 540px;
+  margin: 130px auto;
+  padding: 35px 0;
+}
+
 /* *
 * for responsive design consider 5 things
 * 1. breakpoints
@@ -170,7 +191,8 @@ main {
   }
 
   .team-image-container,
-  .facts-container {
+  .facts-container,
+  .sponsor-companies {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -184,6 +206,15 @@ main {
   gap: 24px;
 }
 
+.sponsor-companies {
+  justify-items: center;
+  gap: 50px;
+}
+
+.footer-section > p {
+  text-align: center;
+}
+
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 996px) {
   .teams {
@@ -192,5 +223,11 @@ main {
 
   .our-features {
     margin: 20px auto;
+  }
+
+  .sponsor-companies,
+  .facts-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
   }
 }
